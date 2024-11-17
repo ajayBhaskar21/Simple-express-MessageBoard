@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Private Messages</title>
+</head>
+<body>
+    <h1>Your Private Messages</h1>
+    <% messages.forEach(message => { %>
+        <h3><%= message.title %></h3>
+        <p><%= message.content %></p>
+        <hr>
+    <% }); %>
+    <a href="/logout">Logout</a>
+</body>
+</html>

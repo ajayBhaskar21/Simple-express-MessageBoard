@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Board</title>
+</head>
+<body>
+    <h1>Public Messages</h1>
+    <% messages.forEach(message => { %>
+        <h3><%= message.title %></h3>
+        <p><%= message.content %></p>
+        <hr>
+    <% }); %>
+    <a href="/login">Login</a>
+</body>
+</html>
